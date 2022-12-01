@@ -1,0 +1,127 @@
+.loader{
+  display: none;
+}
+
+//LOGIN SITE
+
+  .login_container {
+    width: 300px;
+    border: 2px solid rgb(127, 124, 124);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: auto;
+  }
+  .login_title {
+    font-size: 2rem;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  
+  //INPUTS
+  .inputGroup {
+    font-family: "Segoe UI", sans-serif;
+    margin: 1em 0 2em 0;
+    max-width: 250px;
+    position: relative;
+  }
+  
+  .inputGroup input {
+    font-size: 100%;
+    padding: 0.8em;
+    outline: none;
+    border: 2px solid rgb(200, 200, 200);
+    background-color: transparent;
+    border-radius: 20px;
+    width: 100%;
+  }
+  
+  .inputGroup label {
+    font-size: 100%;
+    position: absolute;
+    left: 0;
+    padding: 0.8em;
+    margin-left: 0.5em;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    color: rgb(100, 100, 100);
+  }
+  
+  .inputGroup :is(input:focus, input:valid) ~ label {
+    transform: translateY(-50%) scale(0.9);
+    margin: 0em;
+    margin-left: 1.3em;
+    padding: 0.4em;
+    background-color: white;
+  }
+  
+  .inputGroup :is(input:focus, input:valid) {
+    border-color: rgb(150, 150, 200);
+  }
+  
+  // Division en paginas interna
+  
+  .pages_division {
+    display: flex;
+  }
+  
+  //Navbar
+  
+  .nav_container {
+    max-width: 300px;
+    background-color: rgba(156, 156, 156, 0.208);
+    min-height: 100vh;
+}
+  .navbar_links {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .navbar_links img {
+    max-width: auto;
+  }
+  
+  .navbar_links a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.3rem;
+    margin: 20px 20px 0 20px;
+  }
+  
+  .navbar_dashboard {
+    text-align: center;
+  }
+  
+  //Dashboard view
+  
+  .dashboard_container {
+    width: 100%;
+  }
+  
+  .dashboard_title {
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 5rem;
+  }
+  
+  .dashboard_cards {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5rem;
+    flex-wrap: wrap;
+  }
+  
+  .dashboard_card {
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 25px;
+    font-size: 1.3rem;
+    text-align: center;
+    line-height: 3rem;
+  }
+
+
+@media (max-width: 576px){
+    .nav_container {
+      max-width: 220px;
+    }
+}
