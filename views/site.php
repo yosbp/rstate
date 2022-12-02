@@ -37,7 +37,8 @@ require_once "./inc/linkgenerator.php"; ?>
     </div>
 
     <div class="container text-center search-mod">
-      <form class="form_search" method="post" action="index.php?view=search">
+      <form class="form_search" method="get" action="index.php">
+        <input type="hidden" name="view" value="search" />
         <h4>Busca según lo que necesites:</h3>
           <div class="row justify-content-center">
             <div class="col-sm-6 col-md-4 mb-3 form-group">
@@ -111,7 +112,7 @@ require_once "./inc/linkgenerator.php"; ?>
         <p class="card-text col-3 fs-4 bg-light rounded-3 text-center mx-1"><i class="icon-bath"></i> <?php echo $row['property_banios'] ?></p>
         <p class="card-text col-5 fs-5 bg-light rounded-3 text-center"><i class="icon-measure"></i> <?php echo $row['property_size'] ?> </p>
         <?php $link = linkGenerate($row['property_id'], $row['property_type'], $row['property_location'], $row['property_price']); ?>
-        <a href="index.php?view=property&p=<?php echo $link; ?>" class="btn btn-primary col-6">Detalles</a>
+        <a href="?view=property&p=<?php echo $link; ?>" class="btn btn-primary col-6">Detalles</a>
       </div>
     </div>
   <?php endwhile;
@@ -125,7 +126,7 @@ require_once "./inc/linkgenerator.php"; ?>
     <div class="services_info">
       <h3>Compra con nosotros</h3>
       <p>Busque en nuestra amplia selección de propiedades, casas y terrenos para encontrar el lugar perfecto para usted. Le ayudaremos a ponerse en contacto con el agente, a reservar visita y todo el tramite legal.</p>
-      <a href="index.php?view=search&trAll=Compra" class="w-25">Explora Ofertas</a>
+      <a href="?view=search&trAll=Compra" class="w-25">Explora Ofertas</a>
     </div>
   </div>
 
@@ -134,7 +135,7 @@ require_once "./inc/linkgenerator.php"; ?>
     <div class="services_info">
       <h3>Alquileres disponibles para ti!</h3>
       <p>No vas a encontrar un lugar mejor para vivir que con nosotros. Ofrecemos la mejor calidad y servicio para cualquier persona que necesite un hogar y un excelente lugar para vivir.</p>
-      <a href="index.php?view=search&trAll=Alquiler" class="w-25">Explora Ofertas</a>
+      <a href="?view=search&trAll=Alquiler" class="w-25">Explora Ofertas</a>
     </div>
     <div class="services_photo img-active"> <img class="services_img" src="./img/imgservice2.jpg" alt=""> </div>
   </div>
@@ -144,7 +145,7 @@ require_once "./inc/linkgenerator.php"; ?>
     <div class="services_info">
       <h3>Oferta tu propiedad</h3>
       <p>Contamos con un equipo de expertos que se encargan de ayudarte en cada paso del proceso. Brindamos valoración, mercadeo y negociación de propiedades. No más llamadas telefónicas estresantes con extraños.</p>
-      <a href="index.php?view=search&trAll=Compra" class="w-25">Contactanos</a>
+      <a href="?view=search&trAll=Compra" class="w-25">Contactanos</a>
     </div>
   </div>
 

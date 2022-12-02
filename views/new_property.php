@@ -27,7 +27,7 @@ require_once "./inc/session.php";
 
             <div class="form-outline mb-4">
                 <label class="form-label"><strong>Descripción</strong></label> 
-                <textarea class="form-control" name="description" rows="8"></textarea>
+                <textarea class="form-control" name="description" required rows="8"></textarea>
             </div>
 
             <!--Parte 2-->
@@ -53,7 +53,7 @@ require_once "./inc/session.php";
                 <div class="col">
                     <div class="form-outline">
                         <label class="form-label"><strong>Ubicación</strong></label> 
-                        <input type="text" class="form-control" name="location"/>
+                        <input type="text" class="form-control" required name="location"/>
                     </div>
                 </div>
             </div>
@@ -87,7 +87,7 @@ require_once "./inc/session.php";
                 <div class="col">
                     <div class="form-outline">
                         <label class="form-label"><strong>Pisos</strong></label> 
-                        <input type="text" name="floors" class="form-control" />
+                        <input type="text" name="floors" required class="form-control" />
                     </div>
                 </div>
 
@@ -105,21 +105,24 @@ require_once "./inc/session.php";
                 <div class="col">
                     <div class="form-outline">
                         <label class="form-label"><strong>Dimensiones</strong></label> 
-                        <input type="text" name="size" class="form-control" />
+                        <input type="text" name="size" class="form-control" required placeholder="Ej: 50mts" />
                     </div>
                 </div>
 
                 <div class="col">
                     <div class="form-outline">
                         <label class="form-label"><strong>Precio (Alquiler o Venta)</strong></label> 
-                        <input type="text" name="price" class="form-control" />
+                        <input type="number" name="price" class="form-control" />
                     </div>
                 </div>
 
                 <div class="col">
                     <div class="form-outline">
                         <label class="form-label"><strong>Moneda ($ o Bsd)</strong></label> 
-                        <input type="text" name="currency" class="form-control" />
+                        <select class="form-select" name="currency">
+                        <option value="$">$</option>
+                        <option value="Bsd">Bsd</option>
+                    </select>
                     </div>
                 </div>
             </div>
@@ -146,21 +149,21 @@ require_once "./inc/session.php";
                     <div class="col">
                         <div class="form-outline">
                             <label class="form-label"><strong>Nombre y Apellido</strong></label> 
-                            <input type="text" name="owner" class="form-control" />
+                            <input type="text" name="owner" required class="form-control" />
                         </div>
                     </div>
 
                     <div class="col">
                         <div class="form-outline">
                             <label class="form-label"><strong>Telefono</strong></label> 
-                            <input type="text" name="owner_phone"  class="form-control" />
+                            <input type="text" name="owner_phone" required class="form-control" />
                         </div>
                     </div>
 
                     <div class="row">
                         <div class="col form-outline mt-2 ">
                             <label class="form-label"><strong>Quien registra la propiedad?</strong></label> 
-                            <input type="text" name="publicby" class="form-control" />
+                            <input type="text" name="publicby" required class="form-control" />
                         </div>
                         <div class="col form-outline mt-2 ">
                             <label class="form-label"><strong>Ciudad</strong></label> 

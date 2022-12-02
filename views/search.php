@@ -99,7 +99,7 @@ include "./php/search.php";
           <p class="card-text col-3 fs-4 bg-light rounded-3 text-center mx-1"><i class="icon-bath"></i> <?php echo $row['property_banios'] ?></p>
           <p class="card-text col-5 fs-5 bg-light rounded-3 text-center"><i class="icon-measure"></i> <?php echo $row['property_size'] ?> </p>
           <?php $link = linkGenerate($row['property_id'], $row['property_type'], $row['property_location'], $row['property_price']); ?>
-          <a href="index.php?view=property&p=<?php echo $link; ?>" class="btn btn-primary col-6">Detalles</a>
+          <a href="?view=property&p=<?php echo $link; ?>" class="btn btn-primary col-6">Detalles</a>
         </div>
       </div>
   <?php endwhile;
@@ -114,9 +114,9 @@ include "./php/search.php";
       <li class="page-item"><a class="page-link" href="
       <?php 
       if (isset($_GET['trAll'])){
-        echo 'index.php?view=search&trAll='.$_GET['trAll'].'&page='.$i.'"';
+        echo '?view=search&trAll='.$_GET['trAll'].'&page='.$i.'"';
       }else{?>
-      index.php?view=search&city=<?php echo $_GET['city']?>&type=<?php echo $_GET['type']?>&tr=<?php echo $_GET['tr']?>&page=<?php echo $i?>"<?php }?>><?php echo $i?></a></li>   
+      ?view=search&city=<?php echo $_GET['city']?>&type=<?php echo $_GET['type']?>&tr=<?php echo $_GET['tr']?>&page=<?php echo $i?>"<?php }?>><?php echo $i?></a></li>   
       <?php }?>
     </ul>
   </nav>
