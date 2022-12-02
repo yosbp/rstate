@@ -16,7 +16,7 @@ $data = $data->fetch();
                 <div id="carouselExampleControls" class="carousel carousel-dark slide mx-auto my-5 w-75" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="./img/properties/property_17/Propiedad_17_img1.jpg" class="d-block property_img" alt="...">
+                            <img src="<?php echo $data['property_url_photo']; ?>" class="d-block property_img" alt="...">
                         </div>
                         <?php
                         $galdata = connect();
