@@ -35,6 +35,18 @@ $img_dir = '../img/properties/' . 'property_' . $id;
 if ($_FILES['main_photo']['name'] != "" && $_FILES['main_photo']['size'] > 0) {
 
     //Eliminando la imagen anterior para crear la nueva
+    if (!is_dir($img_dir)) {
+        if (!mkdir($img_dir, 0777, true)) {
+            echo '
+                <div class="alert bg-danger bg-opacity-50 text-center">
+                    <strong>¡Ocurrio un error inesperado!</strong><br>
+                    Error al crear el directorio de imagenes
+                </div>
+                ';
+            exit();
+        }
+    }
+
 
     if (is_file($img_route)) {
         unlink($img_route);
