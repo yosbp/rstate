@@ -19,7 +19,7 @@ $socialdata=null; ?>
             <a class="navbar_main_link nav-link active" href="?view=search&trAll=Alquiler">Alquiler</a>
           </li>
           <li class="nav-item">
-          <a class="navbar_main_link nav-link active" href="">Contacto</a>
+          <a class="navbar_main_link nav-link active" href="?view=contact">Contacto</a>
           </li>
           <li class="nav-item">
           <p class="navbar_main_tel nav-link"><a href="<?php echo $info['config_link_whatsapp']?>" target="_blank"><i class="bi bi-telephone"></i> <?php echo $info['config_phone']?></a> </p>
