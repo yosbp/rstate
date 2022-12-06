@@ -19,7 +19,7 @@ if ($check_city->rowCount() == 1) {
     if ($delete_city->rowCount() == 1) {
         echo
         '<div class="alert bg-success bg-opacity-50 text-center">
-            <strong>TIPO ELIMINADO!</strong><br>
+            <strong>CIUDAD ELIMINADA!</strong><br>
             La ciudad se elimino exitosamente.
             </div>
             ';

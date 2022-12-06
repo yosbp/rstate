@@ -28,7 +28,7 @@ function dataSearchAll($tr, $start, $perPage)
     return array($data, $dataRes);
 };
 
-//Variables y Resultados de consulta
+//Variables para paginador y Resultados de consulta
 
 if (!isset($_GET['page'])) {
     $_GET['page'] = 1;

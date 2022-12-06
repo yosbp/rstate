@@ -7,6 +7,7 @@ require_once "./inc/session.php";
     <div class="dashboard_container">
         <h3 class="mt-5 text-center">Nueva Ciudad</h3>
         <div class="form-rest"></div>
+        <div class="text-center loader"><img src="./img/loader.gif" alt=""></div>
         <form action="./php/city_save.php" class="FormularioAjax w-50 mx-auto mt-5" method="POST" autocomplete="off">
             <div class="form-outline mb-4">
                 <label class="form-label"><strong>Ciudad</strong></label>

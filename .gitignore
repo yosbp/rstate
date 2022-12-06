@@ -1,6 +1,10 @@
 styles/_adminsite.scss
 
+styles/_contact.scss
+
 styles/styles.scss
+
+styles/styles.css.map
 
 js/tablas.js
 

@@ -3,7 +3,7 @@
         <h5>Menu:</h5>
         <a class="footer_link" href="?view=search&trAll=Compra">Compra</a>
         <a class="footer_link" href="?view=search&trAll=Alquiler">Alquiler</a>
-        <a class="footer_link" href="">Contacto</a>
+        <a class="footer_link" href="?view=contact">Contacto</a>
         <a class="footer_link" href="?view=login">Admin</a>
     </div>
     <div class="footer_section">

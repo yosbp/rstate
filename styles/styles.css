@@ -301,6 +301,7 @@
 
 .header_main {
   background-image: url("../img/BG.jpg");
+  background-attachment: fixed;
   background-position: left;
   background-size: cover;
   background-repeat: no-repeat;
@@ -312,13 +313,13 @@
 }
 
 .header_content_text {
-  width: 40%;
+  width: 45%;
   margin-left: 5rem;
 }
 
 .header_content_title {
   font-weight: 700;
-  font-size: 4.5rem;
+  font-size: 3.5rem;
   text-align: center;
 }
 

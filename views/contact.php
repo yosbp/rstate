@@ -49,18 +49,18 @@
 
       <form action="" class="contact__form">
         <div class="contact__form-div">
-          <label class="contact__form-tag">Names</label>
+          <label class="contact__form-tag">Nombres</label>
           <input type="text" placeholder="Ingresa tu nombre completo" class="contact__form-input" />
         </div>
 
         <div class="contact__form-div">
-          <label class="contact__form-tag">Mail</label>
+          <label class="contact__form-tag">Correo</label>
           <input type="email" placeholder="Ingresa tu correo" class="contact__form-input" />
         </div>
 
         <div class="contact__form-div contact__form-area">
           <label class="contact__form-tag">Correo</label>
-          <textarea name="" id="" cols="30" rows="10" placeholder="Write your project" class="contact__form-input"></textarea>
+          <textarea name="" id="" cols="30" rows="10" placeholder="Escribe lo que necesites" class="contact__form-input"></textarea>
         </div>
 
         <button class="contact__button-form">Enviar Correo</button>
