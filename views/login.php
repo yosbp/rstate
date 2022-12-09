@@ -22,4 +22,7 @@
             ?>
         </form>
     </div>
+    <span class="mt-5 d-flex mx-auto" data-bs-toggle="tooltip" data-bs-title="user: admin clave: 1234567">
+        <button class="btn btn-success mx-auto" type="button" disabled>Logueate :)</button>
+    </span>
 </div>

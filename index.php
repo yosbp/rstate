@@ -33,10 +33,11 @@ session_start(); ?>
 
     ?>
 
-
     <script src="./js/ajax.js"></script>
     <script src="./node_modules/gridjs/dist/gridjs.umd.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
