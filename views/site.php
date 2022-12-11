@@ -66,7 +66,7 @@ require_once "./inc/linkgenerator.php"; ?>
                 <option value="Alquiler">Alquiler</option>
               </select>
             </div class>
-            <button type="submit" class="mt-2 align-self-center btn btn-secondary btn-search btn-sm col-sm-6 col-md-2 ">Buscar</button>
+            <button type="submit" class="mt-2 align-self-center btn btn-secondary btn-search col-sm-4 col-md-2 ">Buscar</button>
           </div>
       </form>
     </div>

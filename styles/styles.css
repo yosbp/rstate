@@ -574,6 +574,9 @@
   .search-mod {
     width: 80% !important;
   }
+  .btn-search {
+    width: 50% !important;
+  }
   .header_main {
     background-position: center;
   }

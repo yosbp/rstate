@@ -9,3 +9,5 @@ styles/styles.css.map
 js/tablas.js
 
 php/main.php
+
+*.scss
